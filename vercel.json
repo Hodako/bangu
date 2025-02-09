@@ -6,7 +6,7 @@
       "use": "@vercel/node"
     },
     {
-      "src": "client/package.json",
+      "src": "package.json",
       "use": "@vercel/static-build",
       "config": {
         "buildCommand": "npm run build",
@@ -21,10 +21,16 @@
     },
     {
       "src": "/(.*)",
-      "dest": "client/index.html"
+      "dest": "dist/$1",
+      "continue": true
+    },
+    {
+      "src": "/(.*)",
+      "dest": "dist/index.html"
     }
   ],
   "env": {
-    "NODE_ENV": "production"
+    "NODE_ENV": "production",
+    "DATABASE_URL": "@database_url"
   }
 }
