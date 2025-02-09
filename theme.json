@@ -1,7 +1,16 @@
 {
-  "theme": {
-    "primaryColor": "#3498db",
-    "secondaryColor": "#2ecc71",
-    "fontFamily": "Arial, sans-serif"
-  }
+  "primary": "#3498db",
+  "secondary": "#2ecc71",
+  "background": "#ffffff",
+  "foreground": "#000000",
+  "muted": "#f1f5f9",
+  "mutedForeground": "#64748b",
+  "popover": "#ffffff",
+  "popoverForeground": "#000000",
+  "card": "#ffffff",
+  "cardForeground": "#000000",
+  "border": "#e2e8f0",
+  "input": "#e2e8f0",
+  "accent": "#f1f5f9",
+  "accentForeground": "#0f172a"
 }
